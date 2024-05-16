@@ -1,0 +1,377 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 80px;
+    padding: 0 5%;
+
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.menu li a {
+    text-transform: uppercase;
+    text-decoration: 0;
+    transition: 0.5;
+    color: white;
+    font-size: large;
+}
+
+.menu li a:hover {
+    color: yellow;
+}
+
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+/* img{
+    width: 100%;
+    height: 100%;
+} */
+.accueil {
+    
+    background-size: 160%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+
+}
+.video-accueil{
+    position: relative;
+    z-index: 1;
+    width: 128%;
+    
+     
+}
+
+.accueil h1 {
+    color: white;
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    position: relative;
+    bottom: 900px;
+}
+
+.accueil h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    position: relative;
+    bottom: 600px;
+    font-size: 30px;
+}
+
+.button {
+    padding: 15px;
+    margin-top: 10%;
+    background-color: rgba(0, 4, 255, 0.658);
+    color: white;
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+    bottom: 800px;
+    text-decoration: none;
+}
+.button:hover{
+    padding: 20px;
+    background-color: red;
+    font-size: 30px;
+    transition: 1s;
+}
+
+.profil {
+    background: no-repeat center center fixed url(img/gojo_aesth_by_nkbhd_dg3e1zj-pre.jpg);
+    background-size: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 20%;
+}
+
+.profil h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-right: 24%;
+    padding-bottom: 5%;
+}
+
+.profil p {
+    font-size: 28px;
+    margin-right: 2%;
+    line-height: 2;
+    font-weight: 900;
+}
+
+.competence {
+    background: no-repeat center center fixed url(img/1aa5d281a0c2283d1700a46218591286.png);
+    background-size: 100%;
+}
+
+.portfolio {
+    background: no-repeat center center fixed url(img/detective_conan_by_giovanni_panarello_dehwi4f-pre.jpg);
+    background-size: 110%;
+}
+
+.contact {
+    background: no-repeat center center fixed url(img/fullmetal_alchemist_by_noodleli_d81o33o-pre.jpg);
+    background-size: 100%;
+
+}
+
+
+
+.competence {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    height: 100%;
+    width: 50%;
+   
+}
+.left ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    height: 80%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 5%;
+}
+.left li{
+    padding: 30px;
+    list-style: none;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.left progress{
+    display: flex;
+}
+progress  {
+    -webkit-appearance: none;
+    width: 600px;
+    
+}
+
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 50%;
+    
+    
+}
+.right img{
+    width: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    
+}
+.right  input[type="Submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10%;
+}
+.right  input[type="Submit"]:hover{
+    background-color: rgb(255, 0, 0);
+    transition: .8s;
+    width: 170px;
+    height: 80px;
+    font-size: 28px;
+    color: white;
+    border: none;
+
+}
+
+
+form {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.leftI {
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.leftI ul {
+    background-image: url(/img/lettre\ contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1500px 1100px;
+    border-radius: 5%;
+    width: 900px;
+    height: 1000px;
+    
+    
+}
+
+.leftI li {
+
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    padding: 30px;
+    padding-top: 50px;
+    position: relative;
+    top: 30px;
+    left: 80px;
+
+}
+
+.leftI input {
+    height: 20px;
+}
+
+.objet input {
+    width: 500px;
+}
+
+.champ {
+    margin: 30px;
+    position: relative;
+    top: 30px;
+    left: 80px;
+
+}
+
+.submit input[type="Submit"] {
+    margin-left: 60px;
+    width: 80%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    right: 60px;
+}
+
+.submit input[type="Submit"]:hover {
+    background: #2691d9;
+    color: #e9f4fb;
+    transition: .5s;
+}
+
+
+.rightI {
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightI div {
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 5%;
+
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+article {
+    padding: 40px;
+}
+
+.rightI img {
+    width: 40px;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    padding-right: 110px;
+}
+
+.adresse {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+article a {
+    text-decoration: 0;
+    color: black;
+    font-size: larger;
+}
+
+article a:hover {
+    color: blue;
+}
